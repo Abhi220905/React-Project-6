@@ -1,0 +1,117 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+/* ====== AUTH PAGES (Signup/Login) ====== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?cs=srgb&dl=pexels-minan1398-694740.jpg&fm=jpg') center/cover no-repeat;
+    padding: 20px;
+}
+
+.auth-card {
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+}
+
+.auth-card h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.auth-input {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #333;
+    font-size: 15px;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+}
+
+.btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.link-text {
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link-text:hover {
+    color: #8b5cf6;
+}
+
+/* ====== LIBRARY PAGE ====== */
+
+.card {
+    border-radius: 15px;
+    background: #fff9f2;
+    margin-bottom: 40px;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+thead {
+    background: #8b5cf6;
+    color: white;
+}
+
+th {
+    font-weight: 600;
+}
+
+.btn-warning {
+    background-color: #ffb703 !important;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #ef233c !important;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #7209b7 !important;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
